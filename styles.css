@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%),radial-gradient(circle at 25.99% 27.79%, #ff94fb, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  min-width: 300px;
+}
+
+/* general */
+
+h1, header, p, ul, ol {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* navbar start */
+
+#navbar {
+  position: fixed;
+  width: 370px;
+  background-color: #202020;
+  text-align: right;
+  height: 100%;
+  font-size: 30px;
+}
+
+#navbar header {
+
+  position:relative;
+  padding: 0;
+  margin: 0 5%;
+  text-align: right;
+  top: 280px;
+  font-weight: 700;
+}
+
+#navbar ul {
+  position:relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 5%;
+  text-align: right;
+  top: 300px;
+}
+
+#navbar i {
+  font-weight: 700;
+}
+
+#navbar .nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+#navbar .nav-link:hover {
+  border-bottom: 2px solid white;
+}
+
+/* navbar end */
+
+/* main start */
+
+#main-doc {
+  position:relative;
+  margin-left: 370px;
+}
+
+section.main-section header {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.main-section {
+  width: 90%;
+  border-radius: 35px;
+  margin: 30px auto;
+  border: solid 2px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 20px 8px rgba(0,0,0,0.2);
+  transition: transform .2s; /* Animation */
+}
+
+.main-section p, .main-section ul, .main-section ol, .main-section header {
+  width: 90%;
+  margin: 15px auto;
+}
+
+.main-section .img {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.img img {
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px 8px rgba(0,0,0,0.2);
+}
+
+.main-section:last-child, .reference {
+  padding: 0 0 10px 0;
+}
+
+code {
+  font-size: 1rem;
+}
+
+.main-section:hover {
+  transform: scale(1.03); /* (103% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* main end */
+
+/* for screen under 870px width */
+
+@media (max-width: 870px) {
+
+/* navbar */
+
+  #navbar {
+    width: 270px;
+  }
+
+  #navbar header {
+    font-size: 25px;
+  }
+
+  #navbar .nav-link {
+    font-size: 15px;
+  }
+
+  #navbar ul {
+    line-height: 18px;
+  }
+
+  /* main */
+
+    #main-doc {
+    margin-left: 270px;
+  }
+
+  h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+
+  .main-section ol, .main-section ul {
+    width: 80%;
+  }
+
+  .main-section p {
+    font-size: 14px;
+  }
+
+  code {
+    font-size: 14px;
+  }
+
+  .main-section li {
+    font-size: 14px;
+  }
+
+  section.main-section header {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0 0 5px;
+  }
+
+  .img img {
+  border-radius: 10px;
+  }
+
+}
+
+/* for screen under 550px width */
+
+@media (max-width: 550px) {
+
+/* navbar */
+
+  #navbar {
+    position:relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #navbar header {
+    text-align: center;
+    font-size: 25px;
+    top: 0;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 215px;
+  }
+
+  #navbar .nav-link {
+    font-size: 14px;
+  }
+
+  #navbar ul {
+    line-height: 12px;
+    top: 0;
+    text-align: center;
+  }
+
+  /* main */
+
+    #main-doc {
+    margin:auto;
+  }
+
+  h1 {
+    padding-top: 0;
+    font-size: 30px;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+
+  .main-section p {
+    font-size: 12px;
+  }
+
+  code {
+    font-size: 12px;
+  }
+
+  .main-section li {
+    font-size: 12px;
+  }
+
+  section.main-section header {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0 0 5px;
+  }
+
+  .img img {
+  border-radius: 5px;
+  }
+
+}
